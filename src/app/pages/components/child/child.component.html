@@ -1,0 +1,34 @@
+<p>child works!</p>
+
+<div class="logInForm">
+    <div class="col-md-6 offset-md-3">
+   <form action="" [formGroup]="logInform" (ngSubmit)="onlogInform()">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"  formControlName="username">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa-solid fa-user"></i>
+          </span>
+        </div>
+      </div>
+    <div class="input-group mb-3">
+        <input [type]="passType" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1" formControlName="password">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa-solid fa-eye"
+            (click)="onPass()"
+            *ngIf="pass"
+            ></i>
+            <i class="fa-solid fa-eye-slash"
+            (click)="onPass()"
+                *ngIf="!pass"
+            ></i>
+          </span>
+        </div>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+   </form>
+    </div>
+</div>
