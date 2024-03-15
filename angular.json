@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss",
+              "@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "scripts": []
           },
@@ -103,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "64763d92-bcda-4e26-893e-a3c4a809ae2a"
   }
 }

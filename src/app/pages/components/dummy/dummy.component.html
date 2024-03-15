@@ -1,0 +1,56 @@
+
+
+<h4>Password hide show</h4>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-user"></i>
+              </span>
+            </div>
+          </div>
+        <div class="input-group mb-3">
+            <input [type]="passType" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-eye"
+                (click)="onPass()"
+                *ngIf="pass"
+                ></i>
+                <i class="fa-solid fa-eye-slash"
+                (click)="onPass()"
+                    *ngIf="!pass"
+                ></i>
+              </span>
+            </div>
+          </div>
+    </div>
+</div>
+
+<h4>Change Button Color</h4>
+
+<button class="btn btn-primary" type="button"
+(click)="onBtn()"
+[ngClass]="{
+    'bg-warning': btnCount === 1,
+    'bg-danger' : btnCount === 2,
+    'bg-info'   : btnCount === 3,
+    'bg-dark'   : btnCount === 4,
+    'bg-success'   : btnCount === 5
+
+}"
+>Click</button>
+
+
+
+
+
+
+
+
+
+
+
