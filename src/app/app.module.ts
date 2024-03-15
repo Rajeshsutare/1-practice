@@ -9,6 +9,7 @@ import { EventsDirective } from './directives/events.directive';
 import { ChildComponent } from './pages/components/child/child.component';
 import { ParentComponent } from './pages/components/parent/parent.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductsComponent } from './pages/components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DummyComponent,
     EventsDirective,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

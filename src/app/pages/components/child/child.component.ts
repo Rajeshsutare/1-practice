@@ -29,7 +29,8 @@ export class ChildComponent implements OnInit {
 
   onlogInform(){
     console.log(this.logInform.value);
-    this.toParent.emit(this.logInform.value)
+    this.toParent.emit(this.logInform.value);
+    this.logInform.reset();
     
   }
 
