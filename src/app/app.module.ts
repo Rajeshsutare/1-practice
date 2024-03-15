@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './pages/components/navbar/navbar.component';
 import { DummyComponent } from './pages/components/dummy/dummy.component';
 import { EventsDirective } from './directives/events.directive';
+import { ChildComponent } from './pages/components/child/child.component';
+import { ParentComponent } from './pages/components/parent/parent.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DummyComponent,
-    EventsDirective
+    EventsDirective,
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
