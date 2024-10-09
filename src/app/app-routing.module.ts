@@ -8,7 +8,8 @@ const routes: Routes = [
   // {path:"", pathMatch:"full",redirectTo:"navbar"},
   // {path:"navbar",component:NavbarComponent},
   {path:"dummy",component:DummyComponent},
-  {path:"products", component:ProductsComponent}
+  {path:"products", component:ProductsComponent},
+  {path:"productsCategory", component:ProductsComponent}
 ];
 
 @NgModule({
